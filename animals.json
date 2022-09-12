@@ -1,0 +1,23 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "description": "typicode",
+      "cute": true
+    },
+ 
+    {
+      "id": 2,
+      "name": "some comment",
+      "description": "Blue-footed",
+      "cute": true
+    },
+    {
+    "id": 3,
+    "name": "typicode",
+    "description": "super big",
+    "cute": false
+   }
+  ]
+}
