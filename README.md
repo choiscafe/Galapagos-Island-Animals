@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Source:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://en.wikipedia.org/
+https://oceana.org/
 
 ## Available Scripts
 

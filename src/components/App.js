@@ -2,16 +2,18 @@
 // import './App.css';
 import {useEffect, useState} from 'react'
 import Header from './Header'
-import ListingsContainer from './ListingsContainer'
-import Form from './Form'
-import Home from './Home'
 import NavBar from './NavBar'
+import Form from './Form'
+import Search from "./Search"
+import ListingsContainer from './ListingsContainer'
+import Home from './Home'
 import { Switch, Route } from 'react-router-dom'
 
 
 function App() {
 
   const [animals, setAnimals]= useState([])
+  const [searchTerm, setSearchTerm] = useState("");
   const [formInfo, setFromInfo] = useState({
     id:"",
     name:"",
@@ -25,6 +27,10 @@ function App() {
       setAnimals(animalData)
       })
       }, [])
+
+  const displayedAnimals = animals.filter((animal) => {
+  return animal.name.toLowerCase().includes(searchTerm.toLowerCase());
+  });
 
   function handleChange(event){
     // console.log("Value ")
@@ -48,10 +54,12 @@ function App() {
     
   return (
     <div className="App">
+      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <Header />
       <NavBar />
       <Switch>
         <Route exact path="/animals"> 
-          <ListingsContainer animals={animals}/>
+          <ListingsContainer animals={displayedAnimals}/>
         </Route>
         <Route exact path="/form">
           <Form handleChange={handleChange} handleSubmit={handleSubmit} formInfo={formInfo}/>
@@ -64,13 +72,7 @@ function App() {
         </Route>
       </Switch>
       
-      <header className="App-header">
-        <h1 className="header-title">Galapagos Island</h1>
-        <img src className="App-logo" alt="logo" />
-        <p>
-          Submit another Galapagos animal that you know!
-        </p>
-      </header>
+      
     </div>
   );
 }
