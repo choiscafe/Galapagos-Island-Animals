@@ -1,7 +1,8 @@
 import React from "react";
 
 function Search ({ searchTerm, setSearchTerm }){
-
+ 
+  
   return(
     <div className="searchbar">
       <label htmlFor="search">SEARCH:</label>
@@ -13,7 +14,6 @@ function Search ({ searchTerm, setSearchTerm }){
         onChange={(e) => setSearchTerm(e.target.value)}
       />
     </div>
-
   )
 }
 export default Search

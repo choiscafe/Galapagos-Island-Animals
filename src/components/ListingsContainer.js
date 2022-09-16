@@ -7,10 +7,9 @@ function ListingsContainer ({ animals }){
   })
 
   return (
-    <>
-    <h1>Here are the animals:</h1>
+    <ul className="cards">
     {animalInfo}
-    </>
+    </ul>
   )
 }
 

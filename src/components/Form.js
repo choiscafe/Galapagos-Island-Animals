@@ -1,15 +1,46 @@
-function Form ({ handleSubmit, handleChange, formInfo }){
+import { useState } from "react"
+
+function Form ({ handleSubmit }){
+
+  const [formInfo, setFormInfo] = useState({
+    name:"",
+    type:"",
+    size: "",
+    life_expectancy: "",
+    fun_fact: "",
+    image: ""
+  })
+
+  function handleChange(event){
+    setFormInfo({...formInfo, [event.target.name]: event.target.value})
+  }
 
   return(
-    <div>
-      <h1>Form to add a new animal:</h1>
-      <p>
-          Submit another Galapagos animal that you know!
-      </p>
+    <div className="new-animal-form" onSubmit={(event)=> {
+      event.preventDefault()
+      handleSubmit(formInfo)}}>
+      <h1>Add other Galapagos animals that you know!</h1>
+     
       <form onSubmit={handleSubmit}>
-          <label>Name:</label>
-          <input type="text" name="name" value={formInfo.name} onChange={handleChange} />
-          <input type="submit" value="Submit" />
+       
+          <input type="text" name="name" placeholder="Animal Name" onChange={handleChange} /><br></br>
+
+          <input type="text" name="image" placeholder="Image URL" onChange={handleChange}/><br></br>
+
+          <select name="type" onChange={handleChange}>
+            <option>Select a Category</option>
+            <option value="Reptiles">Reptiles</option> 
+            <option value="Birds">Birds</option>
+            <option value="Fish">Fish</option>
+            <option value="Mammal">Mammal</option>
+          </select>
+            <br></br>
+          <input type="text" name="size" placeholder="Animal Size" onChange={handleChange}/><br></br>
+
+          <input type="text" name="life_expectancy" placeholder="Animal Lifespan" onChange={handleChange}/><br></br>
+
+          <input type="text" name="fun_fact" placeholder="Fun Fact" onChange={handleChange}/><br></br>
+          <button type="submit">Add Animal</button>
       </form>
     </div>
   )

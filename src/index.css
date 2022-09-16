@@ -11,3 +11,210 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.galapagos{
+  display: flex;
+  width: 100%
+}
+.home-div {
+  color: rgb(86, 154, 210);
+  font-size: 28px;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+h3{
+  margin-top: 0.7rem;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc(33% - 2rem);
+  }
+}
+
+.card {
+  margin: 1rem;
+  padding-left: 0.6rem;
+  border: 2px solid rgb(223, 209, 242);
+
+}
+
+.card h2 {
+  display: flex;
+    font-size: 25px;
+    font-weight: 400;
+  letter-spacing: 2.5px;
+  line-height: 1.105;
+  text-transform: uppercase;
+}
+
+.card img {
+  object-fit:cover;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform .13s;
+  height: 330px;
+  position: relative;
+  width: 420px;
+  display: flex;
+  justify-content: center;
+}
+.card img:hover {
+  transform: scale(0.96); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.card button {
+  margin-top: 0.9rem;
+}
+
+button {
+  padding: 0.3rem 1rem;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+button.primary {
+  background-color: var(--green);
+  color: white;
+}
+
+.searchbar {
+  padding: 1rem;
+  flex-direction: column;
+  color: rgb(120, 205, 103);
+  display: flex;
+}
+
+.searchbar input {
+  padding: 0.25rem;
+  display: block;
+  flex-direction: column;
+  color: rgb(120, 205, 103);
+  border: rgb(44, 24, 111);
+}
+
+.searchbar input:hover{
+  border: 3px solid rgb(90, 94, 178);
+  transform: scale(0.96)
+}
+.new-animal-form {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: rgba(181, 182, 250, 0.5);
+  display: flex;
+  flex-direction: column;
+  width:60%;
+  min-width: 300px;
+  position: sticky;
+  top: 0;
+  align-self: flex-start
+}
+
+.new-animal-form input {
+  margin-right: 2rem;
+  flex: 1;
+  display: block;
+  line-height: 23px;
+  width: 100%;
+  padding-left: 5px;
+  border: rgb(163, 144, 227);
+  border-bottom: 5px solid rgb(154, 171, 241);
+  min-width: 250px
+}
+
+.new-animal-form h1 {
+  color:rgb(34, 52, 31);
+  margin-bottom: 2rem;
+}
+
+.new-animal-form select {
+  margin-right: 2rem;
+  flex: 1;
+  display: block;
+  height: 23px;
+  width: 100%;
+  padding-left: 5px;
+  border: rgb(163, 144, 227);
+  border-bottom: 5px solid rgb(154, 171, 241);
+  min-width: 250px
+}
+.new-animal-form button {
+  width: 150px;
+  border: 2px solid rgb(174, 181, 207);
+  color:rgb(46, 48, 50);
+  margin-top: 1.5rem
+}
+/* .animals-router {
+  /* display: flex; */
+  /* justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-router {
+  /* display: flex; */
+  /* 
+
+} */ 
+
+.App-logo {
+  display: block;
+  margin-left: 15px;
+  margin-right: auto;
+  height: 5rem;
+  border-radius: 10%;
+  opacity: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.navBarLink {
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: 13px;
+  margin-bottom: 10px;
+  flex-direction: row;
+  margin-left: 20px;
+  color: rgb(80, 164, 84);
+  font-size: 19px;
+  font-weight: bold;
+  align-self: flex-end;
+  padding: 0.3rem 1rem;
+  border: 2px solid rgb(184, 238, 187);
+  text-underline-position: none;
+  transition: transform .13s;
+}
+.navBarLink :hover {
+  
+  transform: scale(0.96);
+  cursor: pointer;
+}
+.App-header {
+  margin-left: auto;
+  margin-right: 60%;
+  margin-bottom: 25px;
+  align-items: center;
+  display: flex;
+}

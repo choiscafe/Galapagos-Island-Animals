@@ -1,7 +1,5 @@
 
-// import './App.css';
 import {useEffect, useState} from 'react'
-import Header from './Header'
 import NavBar from './NavBar'
 import Form from './Form'
 import Search from "./Search"
@@ -14,11 +12,6 @@ function App() {
 
   const [animals, setAnimals]= useState([])
   const [searchTerm, setSearchTerm] = useState("");
-  const [formInfo, setFromInfo] = useState({
-    id:"",
-    name:"",
-    description:""
-  })
 
   useEffect(() => {
     fetch('http://localhost:3000/animals')
@@ -29,18 +22,17 @@ function App() {
       }, [])
 
   const displayedAnimals = animals.filter((animal) => {
-  return animal.name.toLowerCase().includes(searchTerm.toLowerCase());
+    return animal.name.toLowerCase().includes(searchTerm.toLowerCase())
+      ||animal.type.value
+      ||animal.size.toLowerCase().includes(searchTerm.toLowerCase())
+      ||animal.life_expectancy.toLowerCase().includes(searchTerm.toLowerCase())
+      ||animal.fun_fact.toLowerCase().includes(searchTerm.toLowerCase())
   });
 
-  function handleChange(event){
-    // console.log("Value ")
-    setFromInfo({...formInfo, [event.target.name]: event.target.value})
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    const newAnimal= {...formInfo, id: animals.length+1}
+  function handleSubmit(animal) {
+    const newAnimal= {...animal, id: animals.length+1}
     setAnimals([...animals, newAnimal])
+    
 
     fetch('http://localhost:3000/animals', {
       method: 'POST',
@@ -50,29 +42,27 @@ function App() {
         },
         body: JSON.stringify(newAnimal)
         })
+        alert('The Animal is Successfully Added!')
     }
     
   return (
     <div className="App">
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <Header />
       <NavBar />
       <Switch>
         <Route exact path="/animals"> 
           <ListingsContainer animals={displayedAnimals}/>
         </Route>
         <Route exact path="/form">
-          <Form handleChange={handleChange} handleSubmit={handleSubmit} formInfo={formInfo}/>
+          <Form handleSubmit={handleSubmit} />
         </Route>
         <Route exact path="/">
-          <Home />
+          <Home animals={displayedAnimals}/>
         </Route>
         <Route path="*">
           <h1>404: Page Not Found</h1>
         </Route>
       </Switch>
-      
-      
     </div>
   );
 }

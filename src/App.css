@@ -2,14 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 1rem;
-  border-radius: 30%;
-  opacity: 80%;
-}
 
 
 
@@ -27,4 +19,3 @@
 .App-link {
   color: #61dafb;
 }
-

@@ -2,16 +2,16 @@
   "animals": [
     {
       "id": 1,
-      "name": "Blue-footed booby",
+      "name": "Blue-Footed Booby",
       "type": "Birds",
       "size": "fairly small bird that weighs an average of 3.3 pounds (1.5 kg) but can have a wingspan of up to five feet",
       "life_expectancy": "approximately 17 years",
-      "fun_fact": "The blue color of the blue-footed booby's webbed feet comes from carotenoid pigments obtained from its diet of fresh fish. Carotenoids act as antioxidants and stimulants for the blue-footed booby's immune function, suggesting that carotenoid pigmentation is an indicator of an individual's immunological state.[17] Blue feet also indicate the current health condition of a booby.",
+      "fun_fact": "The blue color of the blue-footed booby's webbed feet comes from carotenoid pigments obtained from its diet of fresh fish. Carotenoids act as antioxidants and stimulants for the blue-footed booby's immune function, suggesting that carotenoid pigmentation is an indicator of an individual's immunological state. Blue feet also indicate the current health condition of a booby.",
       "image": "./images/blue-footed-booby.jpeg"
     },
     {
       "id": 2,
-      "name": "Marine iguana",
+      "name": "Marine Iguana",
       "type": "Reptiles",
       "size": "Average adult sizes range from 1 to 5 feet in length and 1 to 26 pounds of weight.",
       "life_expectancy": "can reach an age of up to 60 years, but average is 12 years or less.",
@@ -19,58 +19,58 @@
       "image": "./images/marine-iguana.jpeg"
     },
     {
-    "id": 3,
-    "name": "Giant tortoise",
-    "type": "Reptiles",
-    "size": "can weigh as much as 300kg (660lbs) and can grow to be 1.3m (4ft) long",
-    "life_expectancy": "100 years or more",
-    "fun_fact": "Spanish explorers, who discovered the islands in the 16th century, named them after the Spanish galápago, meaning 'tortoise'. Galápagos tortoises are native to seven of the Galápagos Islands.",
-    "image": "./images/giant-tortoise.jpeg"
+      "id": 3,
+      "name": "Giant Tortoise",
+      "type": "Reptiles",
+      "size": "can weigh as much as 300kg (660lbs) and can grow to be 1.3m (4ft) long",
+      "life_expectancy": "100 years or more",
+      "fun_fact": "Spanish explorers, who discovered the islands in the 16th century, named them after the Spanish galápago, meaning 'tortoise'. Galápagos tortoises are native to seven of the Galápagos Islands.",
+      "image": "./images/giant-tortoise.jpeg"
     },
     {
-    "id": 4,
-    "name": "Magnicificent frigatebird",
-    "type": "Birds",
-    "size": "length of 89 to 114cm(2ft 11in to 3ft 9in) and wingspan of 2.17 to 2.44m(7ft 1in to 8ft 0in) it is the largest species of frigatebird",
-    "life_expectancy": "about 14 years",
-    "fun_fact": "Males inflate red throat pouches and drum on them with their clacking bills in the presence of females.",
-    "image": "./images/magnicificent-frigatebird.jpeg"
+      "id": 4,
+      "name": "Magnicificent Frigatebird",
+      "type": "Birds",
+      "size": "length of 89 to 114cm(2ft 11in to 3ft 9in) and wingspan of 2.17 to 2.44m(7ft 1in to 8ft 0in) it is the largest species of frigatebird",
+      "life_expectancy": "about 14 years",
+      "fun_fact": "Males inflate red throat pouches and drum on them with their clacking bills in the presence of females.",
+      "image": "./images/magnicificent-frigatebird.png"
     },
     {
-    "id": 5,
-    "name": "Scorpionfish",
-    "type": "Fish",
-    "size": "45.7cm (18in)",
-    "life_expectancy": "about 15 years",
-    "fun_fact": "As their name suggests, scorpionfish have a type of 'sting' in the form of sharp spines coated with venomous mucus. When the spines pierce a predator, the venom is injected immediately at the point of contact. A sting from one of these spines can be potentially fatal to other animals and extremely painful to humans",
-    "image": "./images/scorpionfish.jpeg"
+      "id": 5,
+      "name": "Scorpionfish",
+      "type": "Fish",
+      "size": "45.7cm (18in)",
+      "life_expectancy": "about 15 years",
+      "fun_fact": "As their name suggests, scorpionfish have a type of 'sting' in the form of sharp spines coated with venomous mucus. When the spines pierce a predator, the venom is injected immediately at the point of contact. A sting from one of these spines can be potentially fatal to other animals and extremely painful to humans",
+      "image": "./images/scorpionfish.jpeg"
     },
     {
-    "id": 6,
-    "name": "Swallow-tailed Gull",
-    "type": "Birds",
-    "size": "Height: 20 to 22 inches (51 to 57 cm); Weight: 22 and 28 ounces (610 to 780 g)",
-    "life_expectancy": "up to 49 years",
-    "fun_fact": "It is the only nocturnal gull in the world. It changes colors of head and eyering when breeding",
-    "image": "./images/Swallow-tailed-Gull.jpeg"
+      "id": 6,
+      "name": "Swallow-Tailed Gull",
+      "type": "Birds",
+      "size": "Height: 20 to 22 inches (51 to 57 cm); Weight: 22 and 28 ounces (610 to 780 g)",
+      "life_expectancy": "up to 49 years",
+      "fun_fact": "It is the only nocturnal gull in the world. It changes colors of head and eyering when breeding",
+      "image": "./images/Swallow-tailed-Gull.jpeg"
     },
     {
-    "id": 7,
-    "name": "Moray eel",
-    "type": "Fish",
-    "size": "about 1.5m in length",
-    "life_expectancy": "on average 10-40 years",
-    "fun_fact": "They have three electric organs that contain cells called electrocytes. When the electric eel senses prey or feels threatened by a predator, electrocytes create an electrical current that can release up to 600 volts (if you are unlucky enough to be shocked by 600 volts, it will not kill you on its own, but it will hurt)",
-    "image": "./images/moray-eel.jpeg"
+      "id": 7,
+      "name": "Moray Eel",
+      "type": "Fish",
+      "size": "about 1.5m in length",
+      "life_expectancy": "on average 10-40 years",
+      "fun_fact": "They have three electric organs that contain cells called electrocytes. When the electric eel senses prey or feels threatened by a predator, electrocytes create an electrical current that can release up to 600 volts (if you are unlucky enough to be shocked by 600 volts, it will not kill you on its own, but it will hurt)",
+      "image": "./images/moray-eel.jpeg"
     },
     {
-    "id": 8,
-    "name": "Flightless Cormorant",
-    "type": "Birds",
-    "size": "89 to 100cm (35 to 39.5in) in length and weighing 2.5 to 5.0kg (5.5 to 11.0lb)",
-    "life_expectancy": "around 13 years",
-    "fun_fact": "Flightless cormorants are the only flightless cormorants in the world. The bird's keel (an extension of the breastbone) is smaller than it needs to be for flight, so fewer of the large muscles necessary for flight are connected to it. The bird can still lift its wings, but cannot fly with them.",
-    "image": "./images/Flightless-Cormorant.jpeg"
+      "id": 8,
+      "name": "Flightless Cormorant",
+      "type": "Birds",
+      "size": "89 to 100cm (35 to 39.5in) in length and weighing 2.5 to 5.0kg (5.5 to 11.0lb)",
+      "life_expectancy": "around 13 years",
+      "fun_fact": "Flightless cormorants are the only flightless cormorants in the world. The bird's keel (an extension of the breastbone) is smaller than it needs to be for flight, so fewer of the large muscles necessary for flight are connected to it. The bird can still lift its wings, but cannot fly with them.",
+      "image": "./images/Flightless-Cormorant.jpeg"
     }
   ]
 }
